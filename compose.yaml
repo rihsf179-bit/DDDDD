@@ -1,0 +1,9 @@
+services:
+  lucaxshop:
+    build: .
+    container_name: lucaxshop-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
